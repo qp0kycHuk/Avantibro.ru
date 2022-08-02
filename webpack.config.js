@@ -102,6 +102,7 @@ module.exports = {
       patterns: [
         { from: "./src/img/", to: "./img/" },
         { from: "./src/media/", to: "./media/" },
+        { from: "./src/favicon/", to: "./favicon/" },
         ...generateCopyPlugins('./src/html-dialogs')
       ],
     }),
