@@ -56,7 +56,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        test: /\.(png|jpg|jpeg|gif|svg|webp)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'img/[name][ext]'
+        }
+      },
+      {
+        test: /\.(mp4)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'img/[name][ext]'
@@ -94,6 +101,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: "./src/img/", to: "./img/" },
+        { from: "./src/media/", to: "./media/" },
         ...generateCopyPlugins('./src/html-dialogs')
       ],
     }),

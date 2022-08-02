@@ -2,8 +2,8 @@
 @import '../ui/scss/_functions.scss';
 
 :root {
-	@include getColors(#D21C4B, "primary");
-	@include getColors(#CE9B44, "sec");
+	@include getColors(#EF3D23, "primary");
+	@include getColors(#ce4444, "sec");
 	@include getColors(#0092E4, "blue");
 	@include getColors(#FF9820, "yellow");
 	@include getColors(#31A043, "green");
@@ -12,7 +12,7 @@
 	@include getColors(#333333, "text");
 
 	--bg1: #E9EAEC;
-	--bg2: #F4F5F6;
+	--bg2: #f8f8f8;
 	--bg3: #FFFFFF;
 
 	--spacing: 4px;
@@ -71,5 +71,107 @@ body {
 
 	.active-enabled {
 		display: flex !important;
+	}
+}
+
+
+.placeholder {
+	flex-grow : 1;
+	background: var(--bg3);
+
+	&-header {
+		display       : flex;
+		align-items   : center;
+		padding-top   : 28px;
+		padding-bottom: 28px;
+		background    : var(--bg2);
+
+		@media(max-width:$md) {
+			padding-top   : 10px;
+			padding-bottom: 10px;
+		}
+
+		&__soc {
+			display    : flex;
+			align-items: center;
+
+
+		}
+	}
+
+	&-contacts {
+		display              : grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap             : 16px;
+
+		@media(max-width:$md) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&-contact {
+		border       : 1px solid #F1F1F1;
+		box-shadow   : 0px 16px 20px rgba(35, 35, 35, 0.08);
+		border-radius: 16px;
+		padding      : 24px;
+		height       : auto;
+	}
+
+	&-section {
+		padding-top: 82px;
+		display    : flex;
+		align-items: center;
+
+		@media(max-width:$lg) {
+			flex-direction: column;
+			padding-top   : 32px;
+		}
+
+		@media(max-width:$md) {
+			padding-top: 10px;
+		}
+	}
+
+	&-content {
+		margin-right: 66px;
+
+		@media(max-width:$lg) {
+			margin-right: 0;
+			margin-top  : 32px;
+		}
+	}
+
+	&-video {
+		min-width    : 624px;
+		width        : 624px;
+		position     : relative;
+		background   : #010001;
+		border-radius: 16px;
+		overflow     : hidden;
+		margin-left  : auto;
+
+		@media(max-width:$lg) {
+			min-width   : 0;
+			margin-right: auto;
+			max-width   : 100%;
+			order       : -1;
+		}
+
+		&:before {
+			content       : '';
+			display       : block;
+			width         : 100%;
+			padding-bottom: calc(100% * 442 / 624);
+
+		}
+
+		video {
+			position  : absolute;
+			left      : 0;
+			top       : 0;
+			width     : 100%;
+			height    : 100%;
+			object-fit: cover;
+		}
 	}
 }
