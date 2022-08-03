@@ -36,13 +36,9 @@ img.swiper-lazy:not(.swiper-lazy-loaded){
 .slider-prev,
 .slider-next {
   position: absolute !important;
-  top     : calc(50% - 30px);
+  top     : calc(50% - var(--size) / 2);
   z-index : 3;
-  $arrowLg1: $lg + (2 * (15px + 60px - 24px));
 
-  @media(max-width:$arrowLg1) {
-   top: calc(50% - 15px);
-  }
 }
 
 
@@ -52,11 +48,11 @@ img.swiper-lazy:not(.swiper-lazy-loaded){
 
 
   @media(max-width:$arrowLg) {
-    left: calc(100% - 24px);
+    left: auto;
+    right: -12px;
   }
 
   @media(max-width:$md) {
-    left: auto;
     right: 2px;
   }
 }
@@ -67,11 +63,11 @@ img.swiper-lazy:not(.swiper-lazy-loaded){
   $arrowLg: $lg + (2 * (24px + 60px + 24px));
 
   @media(max-width:$arrowLg) {
-    right: calc(100% - 24px);
+    right: auto;
+    left: -12px;
   }
 
   @media(max-width:$md) {
-    right: auto;
     left: 2px;
   }
 }

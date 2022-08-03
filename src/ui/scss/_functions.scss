@@ -18,8 +18,8 @@
   --color-#{$name}-70    : rgba(#{$rgb}, 0.70);
   --color-#{$name}-80    : rgba(#{$rgb}, 0.80);
   --color-#{$name}-90    : rgba(#{$rgb}, 0.90);
-  --color-#{$name}--light: #{$lighten};
-  --color-#{$name}--dark : #{$darken};
+  --color-#{$name}-light: #{$lighten};
+  --color-#{$name}-dark : #{$darken};
 }
 
 

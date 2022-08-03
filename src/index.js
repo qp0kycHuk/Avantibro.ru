@@ -37,3 +37,17 @@ function loadHandler() {
 	ripple.deAttach('.btn--link')
 
 }
+
+window.addEventListener('toggleopen', (event) => {
+	if (event.detail.target.classList.contains('-menu-')) {
+		document.body.classList.add('menu-open')
+	}
+
+})
+
+window.addEventListener('toggleclose', (event) => {
+	if (event.detail.target.classList.contains('-menu-')) {
+		document.body.classList.remove('menu-open')
+	}
+
+})

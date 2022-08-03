@@ -4,11 +4,12 @@
 	&--#{$name} {
 		--btn-color      : var(--color-#{$name});
 		--btn-color-light: var(--color-#{$name}-10);
+		--btn-color-dark : var(--color-#{$name}-dark);
 		--btn-text       : #{$accent};
 
 		@media (hover) {
 			&:hover {
-				--btn-color      : var(--color-#{$name}--dark);
+				--btn-color      : var(--color-#{$name}-dark);
 				--btn-color-light: var(--color-#{$name}-20);
 			}
 		}
@@ -30,12 +31,12 @@
 	align-items    : center;
 	justify-content: center;
 
-	--size       : 40px;
+	--size       : 50px;
 	height       : var(--size);
-	padding      : 0 calc(var(--size) / 2);
-	border-radius: var(--radius-small);
+	padding      : 0 calc(1.25 * var(--size) / 2 );
+	border-radius: 100px;
 
-	font-size  : 14px;
+	font-size  : 16px;
 	font-family: var(--font-base);
 	font-weight: bold;
 
@@ -74,12 +75,12 @@
 
 	// size
 	&-large {
-		--size   : 52px;
+		--size   : 62px;
 		font-size: 16px;
 	}
 
 	&-small {
-		--size   : 28px;
+		--size   : 42px;
 		font-size: 12px;
 	}
 
@@ -136,15 +137,15 @@
 
 
 	&--fill {
-		background: var(--btn-color);
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), var(--btn-color);
 		color     : var(--btn-text);
 		border    : transparent;
-
+		box-shadow: 0 2px 0 var(--btn-color-dark);
 
 
 		&:focus:not(:active) {
-			background: var(--btn-color);
-			box-shadow: 0 0 0 5px var(--btn-color-light);
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), var(--btn-color);
+			box-shadow: 0 2px 0 var(--btn-color-dark), 0 0 0 5px var(--btn-color-light);
 
 		}
 

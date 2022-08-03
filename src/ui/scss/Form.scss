@@ -32,7 +32,7 @@
 	&-input {
 		outline  : none !important;
 		display  : flex;
-		height   : 40px;
+		height   : 52px;
 		position : relative;
 		padding  : calc(var(--spacing) * 2) calc(var(--spacing) * 4);
 		flex-grow: 1;
@@ -51,13 +51,13 @@
 		border          : 1px solid var(--color-text-10);
 
 		&:first-of-type {
-			border-start-start-radius: var(--radius-small);
-			border-end-start-radius  : var(--radius-small);
+			border-start-start-radius: 12px;
+			border-end-start-radius  : 12px;
 		}
 
 		&:last-of-type {
-			border-end-end-radius  : var(--radius-small);
-			border-start-end-radius: var(--radius-small);
+			border-end-end-radius  : 12px;
+			border-start-end-radius: 12px;
 		}
 
 		&:not(:first-of-type) {
@@ -231,10 +231,12 @@
 	}
 
 	&-input-checkbox:checked~&-checkbox-target {
-		animation: check .3s forwards;
+		animation   : check .3s forwards;
+		background  : var(--color-primary);
+		border-color: var(--color-primary);
 
 		.icon {
-			color    : var(--color-primary);
+			color    : #fff;
 			transform: scale(1);
 		}
 	}
