@@ -171,7 +171,11 @@
   </section>
 
 
-
+  <script>
+    window.addEventListener('load', () => {
+      Fancybox.modal.open('dialog-success.html', { type: 'ajax' })
+    })
+  </script>
 
 
   <%= _.template(require('./html-includes/pray.html').default)() %>
