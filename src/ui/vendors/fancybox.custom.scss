@@ -4,12 +4,15 @@
 
 .fancybox-custom-modal {
   .fancybox__slide {
-    padding: 15px;
+    padding   : 15px;
+    cursor    : default !important;
+    overflow  : hidden;
+    overflow-y: auto;
 
-    @media(max-width:$sm) {
-      padding: 0;
+  }
 
-    }
+  * {
+    box-sizing: border-box !important;
   }
 
   .fancybox__content,
@@ -20,15 +23,12 @@
   .fancybox__content {
     padding   : 0;
     background: none;
+    cursor    : default !important;
 
-    @media(max-width:$sm) {
-      width        : 100%;
-      border-radius: 16px 16px 0 0;
-    }
   }
 
   .carousel__button.is-close {
-    position       : fixed;
+    position       : absolute;
     right          : 0;
     top            : 0;
     padding        : 16px;
@@ -36,25 +36,36 @@
     height         : 68px;
     animation-delay: .35s !important;
 
-    @media(max-width:$sm) {
-      position: absolute;
-      width   : 32px;
-      height  : 32px;
-      top     : 16px;
-      right   : 16px;
-      padding : 0;
 
-      border-radius: 50%;
-      background   : #F3F3F5;
-    }
+    position: absolute;
+    width   : 32px;
+    height  : 32px;
+    top     : 16px;
+    right   : 16px;
+    padding : 0;
+
+    border-radius: 50%;
+    background   : #F3F3F5;
+
 
     svg {
-      @media(max-width:$sm) {
-        filter: none;
-        color : #000;
-        width : 12px;
-        height: 12px;
-      }
+
+      filter: none;
+      color : #000;
+      width : 12px;
+      height: 12px;
+
     }
+  }
+
+
+  .fancybox-error {
+    background: var(--bg3);
+    color     : var(--color-text);
+    padding   : 24px;
+  }
+
+  .fancybox__nav {
+    display: none;
   }
 }

@@ -1,0 +1,106 @@
+<%= _.template(require('./html-includes/header.html').default)() %>
+	<%= _.template(require('./html-includes/page-top.html').default)() %>
+
+
+	<section class="about-page">
+		<div class="about-page-dude mb-10">
+			<div class="about-page-dude__img">
+				<img src="img/test.jpg" alt="">
+			</div>
+			<div class="about-page-dude__content">
+				<div class="about-page-dude__description">
+					Наши специалисты имеют десятки лет опыта в сфере детейлинга и эстетического преображения автомобилей.
+					Мы используем самые эффективные и безопасные материалы при работе. Доверяя нам вы получаете блестящий
+					результат и гарантию на проделанную работу! Наши специалисты имеют десятки лет опыта в сфере детейлинга!
+				</div>
+				<div class="about-page-dude__sign mt-6">
+					<img src="img/sign-1.svg" alt="" class="mr-3">
+					<div>
+						<div class="text-subtitle-2">Иван Иванов</div>
+						<div class="fade-80">Самый главный бро в ателье</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-body-1 fade-80 mb-10">
+			<p class="mb-4">
+				Опытные мастера автоателье Avanti Bro проведут профессиональную перетяжку автомобиля в Краснодаре по индивидуальному дизайн-проекту, учитывая все пожелания заказчика. Благодаря широкому спектру предоставляемых нами услуг, Вы можете сделать свой автомобиль более презентабельным и узнаваемым. 
+
+			</p>
+			<p class="text--demibold mb-4">
+				Данный вид тюнинга - это отличный способ выделиться из толпы и выразить свой стиль!
+
+			</p>
+			<p class="mb-4">
+				Большинство владельцев автомобиля не считают нужным делать химчистку в салоне. На самом деле ее следует проводить регулярно, чтобы предотвратить негативные последствия использования транспортного средства в виде различных загрязнений.
+
+			</p>
+		</div>
+
+		<div class="title font-alt mb-10">Чего мы добились</div>
+		<div class="grid grid-spacing-lg-10 ">
+			<div class="grid-col-lg-4">
+				<div class="about-page-feature">
+					<div class="about-page-feature__img image image--box progress-container">
+						<div class="progress progress-circle text-small fade-60"></div>
+						<img src="https://picsum.photos/600/400?random=23" alt="">
+					</div>
+					<div class="about-page-feature__content">
+						<div class="text-body-0 text-md-h6 mb-1 font-alt text--bold">210 владельцев</div>
+						<div class="text-body-2">
+							уже позаботились о своих
+							автомобилях у нас в 2022 году
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-col-lg-4">
+				<div class="about-page-feature">
+					<div class="about-page-feature__img image image--box progress-container">
+						<div class="progress progress-circle text-small fade-60"></div>
+						<img src="https://picsum.photos/600/400?random=24" alt="">
+					</div>
+					<div class="about-page-feature__content">
+						<div class="text-body-0 text-md-h6 mb-1 font-alt text--bold">Рейтинг 5.0</div>
+						<div class="text-body-2">
+							на популярных площадках
+							Яндекс,  Google и 2GIS
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-col-lg-4">
+				<div class="about-page-feature">
+					<div class="about-page-feature__img image image--box progress-container">
+						<div class="progress progress-circle text-small fade-60"></div>
+						<img src="https://picsum.photos/600/400?random=25" alt="">
+					</div>
+					<div class="about-page-feature__content">
+						<div class="text-body-0 text-md-h6 mb-1 font-alt text--bold">Более 13 услуг</div>
+						<div class="text-body-2">
+							реализуется в одном месте
+							по адресу ул.Кропоткина 50
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pb-lg-8 pb-5"></div>
+		<div class="pb-lg-8 pb-5"></div>
+
+		<div class="title font-alt mb-10">Наше портфолио</div>
+		<%= _.template(require('./html-includes/portfolio-gallery.html').default)({count: 8}) %>
+
+		<div class="flex mt-10">
+			<button class="btn btn--primary btn--fill mx-auto">Смотреть всё</button>
+		</div>
+	</section>
+
+
+
+
+	<%= _.template(require('./html-includes/reviews-slider.html').default)() %>
+	<%= _.template(require('./html-includes/qwiz.html').default)() %>
+	<%= _.template(require('./html-includes/footer.html').default)() %>

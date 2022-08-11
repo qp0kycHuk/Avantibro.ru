@@ -1,0 +1,84 @@
+<%= _.template(require('./html-includes/header.html').default)() %>
+<%= _.template(require('./html-includes/page-top.html').default)() %>
+
+	<section class="material-detail">
+		<div class="text-h6 text-md-h2 text--bold font-alt mb-6 mb-md-10">
+			Перетяжка салона вашего автомобиля в Краснодаре
+		</div>
+
+		<div class="text-body-1 fade-80 mb-10">
+			<p class="mb-4">
+				Элегантная кожаная обивка значительно поднимает престиж автомобиля и его владельца. К тому же обтянутый кожей
+				салон более практичен: в нем повышаются шумоизоляция и акустика, а уплотнение стыков деталей заметно снижает
+				вероятность посторонних скрипов и вибраций.
+
+
+
+			</p>
+			<p class="text--demibold mb-4"> Натуральная кожа – самый дорогой и премиальный материал для отделки салонов
+				автомобилей.
+
+			</p>
+			<p class="mb-4">
+				Для этого используются специальные автомобильные кожи, изготовленные особым образом. Сырьем для их
+				производства являются шкуры крупного рогатого скота (КРС: коров, быков, телят). Телячьи шкуры, мягкие и
+				нежные, стоят дороже всего. Коровьи и бычьи шкуры обладают большой плотностью и прочностью.
+
+			</p>
+			<p>
+				Толщина готового материала для автомобильной обшивки составляет от 1,2 до 1,6 мм.
+			</p>
+
+		</div>
+
+		<%= _.template(require('./html-includes/portfolio-gallery.html').default)({count: 4}) %>
+
+		<div class="pt-lg-7 pb-10"></div>
+
+		<div class="material-detail-block">
+			<div class="material-detail-block__content">
+				<div class="text-h6 text-md-h2 text--bold font-alt mb-10">
+					Почему стоит выбрать <br>
+					именно натуральную кожу
+				</div>
+				<div class="material-detail-block__list">
+					<li>
+						<svg class="icon color-primary mr-4">
+							<use xlink:href="img/icons.svg#circle-check" />
+						</svg>
+						Износостойкость
+					</li>
+					<li>
+						<svg class="icon color-primary mr-4">
+							<use xlink:href="img/icons.svg#circle-check" />
+						</svg>
+						Гипоаллергенность
+					</li>
+					<li>
+						<svg class="icon color-primary mr-4">
+							<use xlink:href="img/icons.svg#circle-check" />
+						</svg>
+						Практичность
+					</li>
+					<li>
+						<svg class="icon color-primary mr-4">
+							<use xlink:href="img/icons.svg#circle-check" />
+						</svg>
+						Комфорт
+					</li>
+					<li>
+						<svg class="icon color-primary mr-4">
+							<use xlink:href="img/icons.svg#circle-check" />
+						</svg>
+						Эстетичность и престижность
+					</li>
+				</div>
+			</div>
+			<div class="material-detail-block__img">
+				<img src="img/material-detail-sempl.png" alt="">
+			</div>
+		</div>
+	</section>
+
+<%= _.template(require('./html-includes/qwiz.html').default)() %>
+<%= _.template(require('./html-includes/footer.html').default)() %>

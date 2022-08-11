@@ -1,0 +1,12 @@
+<%= _.template(require('./html-includes/header.html').default)() %>
+<%= _.template(require('./html-includes/page-top.html').default)() %>
+
+
+
+<section class="portfolio-page">
+	<%= _.template(require('./html-includes/portfolio-gallery.html').default)({count: 16}) %>
+</section>
+
+
+<%= _.template(require('./html-includes/qwiz.html').default)() %>
+<%= _.template(require('./html-includes/footer.html').default)() %>

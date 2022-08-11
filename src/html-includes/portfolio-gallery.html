@@ -1,0 +1,10 @@
+<div class="grid grid-spacing-6">
+    <% for(let i = 0; i < (count || 12); i++){ %>
+    <div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
+        <a data-fancybox-modal="works" class="image image-action image--box progress-container brs-1 bg-l1 waved" href="javascript:;" data-src="dialog-portfolio.html" data-type="ajax">
+            <div class="progress progress-circle text-body-0 fade-60"></div>
+            <img src="https://picsum.photos/600/400?random=1<%= i %>" alt="">
+        </a>
+    </div>
+    <% } %>
+</div>

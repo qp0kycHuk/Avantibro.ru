@@ -1,0 +1,63 @@
+<%= _.template(require('./html-includes/header.html').default)() %>
+	<%= _.template(require('./html-includes/page-top.html').default)() %>
+
+	<section class="service" id="service">
+		<div class="grid grid-spacing-lg-7">
+			<% for(let i = 0; i < 12; i++){ %>
+			<div class="grid-col-lg-3 grid-col-md-4 grid-col-6">
+				<a href="javascript:;" class="service-item waved h-100" data-fancybox-modal data-src="dialog-service.html" data-type="ajax">
+					<div class="service-item__img progress-container">
+						<div class="progress progress-circle fade-60 text-body-2"></div>
+						<img src="https://picsum.photos/600/400?random=10<%= i %>" alt="" loading="lazy">
+					</div>
+					<div class="service-item__content">
+						<div class="text-body-2 text-md-body-0 text--bold mb-3">Перетяжка салона</div>
+						<div class="text-body-0 text-lg-h6 text--regular fade-60">От 5000 ₽</div>
+						<div class="mt-5">
+							<button class="btn btn--primary btn--link text-body-2 text-md-body-1 text--demibold">
+								Заказать <span class="d-none d-md-inline"> услугу</span>
+								<svg class="icon text-small-2 ml-3">
+									<use xlink:href="img/icons.svg#link" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<% } %>
+		</div>
+
+		<%= _.template(require('./html-includes/service-buner.html').default)() %>
+	</section>
+
+	<section class="content pb-10">
+	
+		<div class="title font-alt mb-8">
+			<div class="text--left">
+				Перетяжка салона вашего автомобиля в Краснодаре
+			</div>
+		</div>
+
+		<div class="text-body-1 fade-80">
+			<p class="mb-4">
+				Опытные мастера автоателье Avanti Bro проведут профессиональную перетяжку автомобиля в Краснодаре по индивидуальному дизайн-проекту, учитывая все пожелания заказчика. Благодаря широкому спектру предоставляемых нами услуг, Вы можете сделать свой автомобиль более презентабельным и узнаваемым. 
+
+			</p>
+			<p class="text--demibold mb-4">
+				Данный вид тюнинга - это отличный способ выделиться из толпы и выразить свой стиль!
+
+			</p>
+			<p class="mb-4">
+				Большинство владельцев автомобиля не считают нужным делать химчистку в салоне. На самом деле ее следует проводить регулярно, чтобы предотвратить негативные последствия использования транспортного средства в виде различных загрязнений. Опытные мастера автоателье Avanti Bro проведут профессиональную перетяжку автомобиля в Краснодаре по индивидуальному дизайн-проекту, учитывая все пожелания заказчика. Благодаря широкому спектру предоставляемых нами услуг, Вы можете сделать свой автомобиль более презентабельным и узнаваемым. Данный вид тюнинга - это отличный способ выделиться из толпы и выразить свой стиль!
+
+			</p>
+			<p>
+				Наши специалисты имеют десятки лет опыта в сфере детейлинга и эстетического преображения автомобилей. Мы используем самые эффективные и безопасные материалы при работе. 
+			</p>
+
+		</div>
+	</section>
+
+
+<%= _.template(require('./html-includes/footer.html').default)() %>

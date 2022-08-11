@@ -1,0 +1,201 @@
+<section class="qwiz">
+    <div class="qwiz-block" data-qwiz>
+        <div class="qwiz-content">
+            <div class="swiper w-100">
+                <div class="swiper-wrapper h-auto">
+                    <div class="swiper-slide">
+                        <div class="qwiz-title font-alt">
+                            Какая <span class="color-primary font-alt">услуга</span> вас <br>
+                            интересует?
+                        </div>
+                        <div class="qwiz-checklist">
+                            <label class="form-field form-checkbox">
+                                <input type="checkbox" class="form-input-checkbox">
+                                <div class="form-checkbox-target">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#gal-ochka" />
+                                    </svg>
+                                </div>
+                                <div class="text-body-1 ml-2">Перетяжка салона</div>
+                            </label>
+                            <label class="form-field form-checkbox">
+                                <input type="checkbox" class="form-input-checkbox">
+                                <div class="form-checkbox-target">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#gal-ochka" />
+                                    </svg>
+                                </div>
+                                <div class="text-body-1 ml-2">Перетяжка потолка</div>
+                            </label>
+                            <label class="form-field form-checkbox">
+                                <input type="checkbox" class="form-input-checkbox">
+                                <div class="form-checkbox-target">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#gal-ochka" />
+                                    </svg>
+                                </div>
+                                <div class="text-body-1 ml-2">Перетяжка торпедо</div>
+                            </label>
+                            <label class="form-field form-checkbox">
+                                <input type="checkbox" class="form-input-checkbox">
+                                <div class="form-checkbox-target">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#gal-ochka" />
+                                    </svg>
+                                </div>
+                                <div class="text-body-1 ml-2">Перетяжка сидений</div>
+                            </label>
+                            <label class="form-field form-checkbox">
+                                <input type="checkbox" class="form-input-checkbox">
+                                <div class="form-checkbox-target">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#gal-ochka" />
+                                    </svg>
+                                </div>
+                                <div class="text-body-1 ml-2">Перетяжка дверей</div>
+                            </label>
+                            <label class="form-field form-checkbox">
+                                <input type="checkbox" class="form-input-checkbox">
+                                <div class="form-checkbox-target">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#gal-ochka" />
+                                    </svg>
+                                </div>
+                                <div class="text-body-1 ml-2">Перетяжка ручки КПП</div>
+                            </label>
+                            <label class="form-field form-checkbox">
+                                <input type="checkbox" class="form-input-checkbox">
+                                <div class="form-checkbox-target">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#gal-ochka" />
+                                    </svg>
+                                </div>
+                                <div class="text-body-1 ml-2">Перетяжка подлокотника</div>
+                            </label>
+                            <label class="form-field form-checkbox">
+                                <input type="checkbox" class="form-input-checkbox">
+                                <div class="form-checkbox-target">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#gal-ochka" />
+                                    </svg>
+                                </div>
+                                <div class="text-body-1 ml-2">Перетяжка ручки КПП</div>
+                            </label>
+                            <label class="form-field form-checkbox">
+                                <input type="checkbox" class="form-input-checkbox">
+                                <div class="form-checkbox-target">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#gal-ochka" />
+                                    </svg>
+                                </div>
+                                <div class="text-body-1 ml-2">Перетяжка подлокотника</div>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- <div class="qwiz-title font-alt">
+                Какая <span class="color-primary font-alt">услуга</span> вас <br>
+                интересует?
+              </div> -->
+                        <label class="form-field mb-5">
+                            <div class="text-body-0 text--demibold mb-2">Ваше имя</div>
+                            <div class="form-input-cover">
+                                <input type="text" class="form-input" placeholder="Например, Юлий..." required>
+                            </div>
+                        </label>
+                        <label class="form-field">
+                            <div class="text-body-0 text--demibold mb-2">Ваш телефон</div>
+                            <div class="form-input-cover">
+                                <input type="tel" class="form-input" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _"
+                                    required>
+                            </div>
+                        </label>
+
+                        <button class="btn btn--primary btn--fill mt-7">Отправить заявку</button>
+                        <div class="text-small fade-60 mt-5">
+                            Отправляя форму, Вы даете согласие на обработку <br>
+                            Ваших персональных данных
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <button class="qwiz-next btn btn--primary btn--fill mt-7" data-qwiz-next>
+                Дальше
+                <svg class="icon ml-3" style="transform: scaleX(-1);">
+                    <use xlink:href="img/icons.svg#arrow-left" />
+                </svg>
+            </button>
+        </div>
+        <div class="qwiz-img">
+            <img src="img/qwiz.jpg" alt="">
+        </div>
+    </div>
+</section>
+<script>
+    function checkSlide(slide) {
+        const inputs = slide.querySelectorAll('input, textarea, select')
+
+        let isReady = false;
+
+        for (let i = 0; i < inputs.length; i++) {
+            const input = inputs[i];
+
+            if (['radio', 'checkbox'].includes(input.type)) {
+                if (input.checked) {
+                    isReady = true;
+                }
+            }
+        }
+
+        for (let i = 0; i < inputs.length; i++) {
+            const input = inputs[i];
+
+            if (!(['radio', 'checkbox'].includes(input.type))) {
+                if (!input.value) {
+                    isReady = false;
+                }
+            }
+        }
+
+        return isReady;
+    }
+
+    function slideChangeHandler(swiper) {
+        const isReady = checkSlide(swiper.slides[swiper.activeIndex])
+        if (!isReady) {
+            $qwizNext.disabled = true
+        } else {
+            if (swiper.activeIndex !== swiper.slides.length - 1) {
+                $qwizNext.disabled = false
+
+            }
+        }
+    }
+
+    const $qwiz = document.querySelector('[data-qwiz]')
+    const $qwizNext = $qwiz.querySelector('[data-qwiz-next]')
+
+    const qwizSlider = new Swiper('.qwiz-content .swiper', {
+        slidesPerView: 1,
+        watchSlidesProgress: true,
+        spaceBetween: 20,
+        touchRatio: 0,
+        navigation: {
+            nextEl: '.qwiz-content .qwiz-next',
+            // prevEl: '.slider-review .slider-prev'
+        },
+        on: {
+            init: slideChangeHandler,
+            slideChange: slideChangeHandler,
+        }
+    })
+
+    $qwiz.addEventListener('input', (event) => {
+        slideChangeHandler(qwizSlider)
+    })
+
+
+</script>

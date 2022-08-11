@@ -1,0 +1,23 @@
+<%= _.template(require('./html-includes/header.html').default)() %>
+<%= _.template(require('./html-includes/page-top.html').default)() %>
+
+	<section class="materials-page">
+		<div class="materials-page-item">
+			<div class="materials-page-item__img image image--box progress-container">
+				<div class="progress progress-circle text-body-1 fade-60"></div>
+				<img src="https://picsum.photos/600/400?random=11" alt="">
+			</div>
+			<div class="materials-page-item__content">
+				<div class="text-h6 text-lg-h2 mb-3 font-alt text--bold">Натуральная кожа</div>
+				<div class="text-body-2 text-lg-body-1 fade-80 mb-5">
+					Какими бы великолепными качествами не обладали современные материалы, разработанные специально для
+					внутренней отделки автомобиля, кожаный салон всегда остаётся в тренде. Как и всё натуральное, он является
+					символом высокого статуса, и выглядит дорого и элегантно.
+				</div>
+				<button class="btn btn--primary btn--fill mt-auto">Подробнее</button>
+			</div>
+		</div>
+	</section>
+
+
+<%= _.template(require('./html-includes/footer.html').default)() %>

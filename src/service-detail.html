@@ -1,0 +1,135 @@
+<%= _.template(require('./html-includes/header.html').default)() %>
+	<%= _.template(require('./html-includes/pray.html').default)() %>
+
+
+	<section class="advantages">
+		<div class="grid grid-spacing-md-10">
+			<div class="grid-col-md-6 grid-col-lg-3">
+				<div class="advantages-item">
+					<div class="advantages-item__img">
+						<img src="img/advantages-1.png" alt="">
+					</div>
+					<div class="advantages-item__content">
+						<div class="text--bold mb-3">Отвечаем за свою работу</div>
+						<div class="fade-60">
+							Вся работа четко оговаривается
+							и выполняется в срок
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="grid-col-md-6 grid-col-lg-3">
+				<div class="advantages-item">
+					<div class="advantages-item__img">
+						<img src="img/advantages-2.png" alt="">
+					</div>
+					<div class="advantages-item__content">
+						<div class="text--bold mb-3">Прислушиваемся к клиентам</div>
+						<div class="fade-60">
+							Все вопросы решаются с учетом
+							пожеланий клиента
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="grid-col-md-6 grid-col-lg-3">
+				<div class="advantages-item">
+					<div class="advantages-item__img">
+						<img src="img/advantages-3.png" alt="">
+					</div>
+					<div class="advantages-item__content">
+						<div class="text--bold mb-3">Доверяем лучшим</div>
+						<div class="fade-60">
+							В нашей команде работают только
+							те, кто подтвердил свой уровень
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="grid-col-md-6 grid-col-lg-3">
+				<div class="advantages-item">
+					<div class="advantages-item__img">
+						<img src="img/advantages-4.png" alt="">
+					</div>
+					<div class="advantages-item__content">
+						<div class="text--bold mb-3">Ценим качество</div>
+						<div class="fade-60">
+							Используем тольо качественные
+							материалы в свое работе
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="works">
+		<div class="title font-alt">Работы по перетяжке</div>
+    	<div class="subtitle fade-60">Оцените нашу работу. Мы вкладываем в нее всю душу!</div>
+		<div class="works-buner mb-10">
+			<div class="works-buner__img">
+				<img src="img/works-buner.png" alt="">
+			</div>
+			<div class="works-buner__content">
+				<div class="works-buner__sign">
+					<img src="img/fire.png" alt="">
+					Самая свежая работа
+				</div>
+				<div class="works-buner__title font-alt">Перетяжка салона BMW</div>
+				<div class="works-buner__desc fade-60">
+					Оцените нашу работу. Мы вкладываем в нее всю душу!
+				</div>
+				<ul class="works-buner__list text-ul">
+					<li class="text-ul-item">Только премиум материалы</li>
+					<li class="text-ul-item">Мастера с опытом от 3-ех лет</li>
+					<li class="text-ul-item">Гарантия работы от 1 года</li>
+				</ul>
+				<button class="works-buner__btn btn btn--primary btn--fill">Подробнее</button>
+			</div>
+		</div>
+
+		<%= _.template(require('./html-includes/portfolio-gallery.html').default)({count: 8}) %>
+		
+	</section>
+
+	
+
+	
+	
+	
+	<%= _.template(require('./html-includes/reviews-slider.html').default)() %>
+
+	<section class="content pb-10 pt-10">
+	
+		<div class="title font-alt mb-8">
+			<div class="text--left">
+				Перетяжка салона вашего автомобиля в Краснодаре
+			</div>
+		</div>
+
+		<div class="text-body-1 fade-80">
+			<p class="mb-4">
+				Опытные мастера автоателье Avanti Bro проведут профессиональную перетяжку автомобиля в Краснодаре по индивидуальному дизайн-проекту, учитывая все пожелания заказчика. Благодаря широкому спектру предоставляемых нами услуг, Вы можете сделать свой автомобиль более презентабельным и узнаваемым. 
+
+			</p>
+			<p class="text--demibold mb-4">
+				Данный вид тюнинга - это отличный способ выделиться из толпы и выразить свой стиль!
+
+			</p>
+			<p class="mb-4">
+				Большинство владельцев автомобиля не считают нужным делать химчистку в салоне. На самом деле ее следует проводить регулярно, чтобы предотвратить негативные последствия использования транспортного средства в виде различных загрязнений. Опытные мастера автоателье Avanti Bro проведут профессиональную перетяжку автомобиля в Краснодаре по индивидуальному дизайн-проекту, учитывая все пожелания заказчика. Благодаря широкому спектру предоставляемых нами услуг, Вы можете сделать свой автомобиль более презентабельным и узнаваемым. Данный вид тюнинга - это отличный способ выделиться из толпы и выразить свой стиль!
+
+			</p>
+			<p>
+				Наши специалисты имеют десятки лет опыта в сфере детейлинга и эстетического преображения автомобилей. Мы используем самые эффективные и безопасные материалы при работе. 
+			</p>
+
+		</div>
+	</section>
+
+	<%= _.template(require('./html-includes/contacts.html').default)() %>
+	<%= _.template(require('./html-includes/footer.html').default)() %>

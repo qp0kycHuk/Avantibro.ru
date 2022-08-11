@@ -36,9 +36,11 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.27",
+    "inputmask": "^5.0.7",
     "npm-kit-ripple": "^1.5.6",
     "npm-kit-tab": "^1.0.0",
     "npm-kit-toggle": "^1.1.0",
-    "swiper": "^8.2.4"
+    "swiper": "^8.2.4",
+    "ymaps": "^0.2.1"
   }
 }

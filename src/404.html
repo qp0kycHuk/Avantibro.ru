@@ -1,0 +1,14 @@
+<%= _.template(require('./html-includes/header.html').default)() %>
+
+    <section class="not-found">
+        <div class="not-found__title">404</div>
+        <div class="not-found__description fade-80">
+            Запрашиваемая вами страница перенесена или удалена. Возможно, <br>
+            вы допустили опечатку при вводе адреса, пожалуйста, попробуйте еще раз.
+        </div>
+        <button class="btn btn--primary btn--fill not-found__btn">
+            На главную
+        </button>
+    </section>
+
+<%= _.template(require('./html-includes/footer.html').default)() %>
