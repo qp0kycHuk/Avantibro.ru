@@ -2124,3 +2124,59 @@ picture {
 		}
 	}
 }
+
+.page-reviews {
+	padding-top   : 75px;
+	padding-bottom: 85px;
+
+	@media(max-width:$md) {
+		padding-top   : 32px;
+		padding-bottom: 52px;
+	}
+
+	&-head {
+		background   : #F6F6F6;
+		border-radius: 24px;
+		display      : flex;
+		align-items  : center;
+		padding      : 24px 36px 24px 58px;
+		margin-bottom: 78px;
+
+		@media(max-width:$lg) {
+			flex-direction: column;
+			align-items   : center;
+			text-align    : center;
+			padding       : 24px;
+		}
+
+		@media(max-width:$md) {
+			margin-bottom: 32px;
+			border-radius: 0;
+
+			width        : calc(100% + 30px);
+			margin-left  : -15px;
+			padding-left : 15px;
+			padding-right: 15px;
+
+		}
+
+		&__btns {
+			display: flex;
+
+			@media(max-width:$lg) {
+				margin-top : 15px;
+				margin-left: 0;
+			}
+		}
+
+		&__btn {
+			border-radius: 12px;
+			width        : 102px;
+			padding      : 0 15px;
+
+			@media(max-width:$sm) {
+				width: auto;
+			}
+		}
+	}
+}
