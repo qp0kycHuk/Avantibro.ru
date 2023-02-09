@@ -641,6 +641,10 @@ body {
 		}
 	}
 
+	&__ul li::before {
+		background-color: var(--bg3);
+	}
+
 	&__desc {
 		color: #FFFFFF;
 
