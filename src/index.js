@@ -6,7 +6,7 @@ import tab from 'npm-kit-tab';
 import toggle from 'npm-kit-toggle';
 import ripple from 'npm-kit-ripple';
 import Swiper, { Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, EffectFade, Lazy } from 'swiper';
-import inputmask from "./js/inputmask";
+import phonemask from "./js/phonemask/phonemask";
 import ymaps from 'ymaps';
 
 
@@ -32,7 +32,7 @@ function loadHandler() {
 	toggle.init();
 	ripple.init();
 	theme.init();
-	inputmask.init(document)
+	phonemask.init('[type="tel"]')
 
 	ripple.attach('.btn')
 	ripple.attach('.waved')
