@@ -641,6 +641,10 @@ body {
 		}
 	}
 
+	&__ul li::before {
+		background-color: var(--bg3);
+	}
+
 	&__desc {
 		color: #FFFFFF;
 
@@ -2177,6 +2181,27 @@ picture {
 			@media(max-width:$sm) {
 				width: auto;
 			}
+		}
+	}
+}
+
+.politic {
+	max-width: 1120px;
+
+	&__title {
+		background-color: var(--bg1);
+	}
+
+	&__content {
+		max-width    : 1010px;
+		padding-left : 55px;
+		padding-right: 55px;
+	}
+
+	@media(max-width: $md) {
+		&__content {
+			padding-left : 16px;
+			padding-right: 16px;
 		}
 	}
 }
