@@ -1059,14 +1059,19 @@ body {
 	padding-top    : 48px;
 	padding-bottom : 68px;
 
-	@media(max-width:$lg) {
-		display: none;
+	@media(max-width:$md) {
+		flex-direction: column;
+		gap           : 32px;
 	}
 
 	&__nav {
 		display       : flex;
 		flex-direction: column;
 		align-items   : flex-start;
+
+		@media(max-width:$lg) {
+			display: none;
+		}
 
 		&-item {
 			position: relative;
@@ -1083,6 +1088,17 @@ body {
 		display       : flex;
 		flex-direction: column;
 		align-items   : flex-start;
+		align-self    : stretch;
+	}
+
+	&-dev {
+		margin-top           : auto;
+		text-decoration      : underline;
+		text-underline-offset: 4px;
+
+		@media(max-width:$lg) {
+			margin-top: 40px;
+		}
 	}
 
 	&-insta {
